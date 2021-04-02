@@ -18,6 +18,7 @@
 https://procir-study.site/TAKEDA379/gourmet-search-app/laravel/
 
 //該当プロジェクトのリポジトリ
+https://github.com/yuki5768/gourmet-app-laravel5.5-
 
 //開発環境
 vim 7.4.1099
