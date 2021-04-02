@@ -51,6 +51,19 @@ MacOS Big Sur 11.2.3(Safari 14.0.3/Chrome 89.0.4389.90 (Official Build) (x86_64)
 ・google map (Maps JavaScript API)
 ・geolocation API
 
+//テーブル構造
+CREATE TABLE `shops` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `shop_id` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `station_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `logo_image` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 //アドバイスして欲しいポイント及び今後実装したい機能
 ・レストランの所在地をgoogle mapで表示する際に現在地からのルートを表示できるようにしたかったです。
 ・今回はユーザー登録を必要としない仕様にしましたが、ユーザ情報登録制にすることで、飲食店のお気に入り追加機能などを実装できると思いました。また、そうすることでユーザーの消費活動データや飲食店の好みの傾向(年齢別、性別)などのデータを蓄積することも可能になると思いました。今後の改良で実装していきたいと思います。
