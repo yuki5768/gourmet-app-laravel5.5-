@@ -19,15 +19,14 @@
 var map;
 function initMap() {
 	var target = document.getElementById('gmap');
-	var empire = {lat: {{ $shop_lat }}, lng: {{ $shop_lng }}};
-	//Empire State Bldg の緯度（latitude）と経度（longitude）
+	var shop_location = {lat: {{ $shop_lat }}, lng: {{ $shop_lng }}};
 	map = new google.maps.Map(target, {
-		center: empire,
+		center: shop_location,
 		zoom: 14
 	});
 
 	marker = new google.maps.Marker({
-		position: empire,
+		position: shop_location,
 		map: map
 	});
 }
