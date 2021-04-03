@@ -15,7 +15,7 @@
 <p>※範囲を選択しない場合3000m以内の飲食店を自動的に検索します。</p>
 <p>※最大25件まで検索できます。</p>
 <select name="range">
-<option value="">検索範囲を選択</option>
+<option value="5">検索範囲を選択</option>
 <option value="1">300m以内</option>
 <option value="2">500m以内</option>
 <option value="3">1000m以内</option>
